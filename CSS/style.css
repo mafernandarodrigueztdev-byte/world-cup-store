@@ -1,35 +1,19 @@
-
-
-
-
-
-
-
-/* Controlamos el tamaño de las fotos del carrusel para que no deformen la web */
 .img-carrusel {
-    height: 450px; /* Ajusta los píxeles que quieras de alto */
-    object-fit: cover; /* Recorta la imagen limpiamente en vez de aplastarla */
-    object-position: center; /* Centra el enfoque de la foto */
+    max-width: 450px; 
+    
+    height: 350px; 
+    object-fit: contain; 
+    
+    margin: 0 auto; 
 }
 
-/* Opcional: Ajuste para que en celulares no se vea gigante */
+
 @media (max-width: 768px) {
     .img-carrusel {
     height: 250px; 
     }
 }
 
-.img-carrusel {
-  /* 1. Limitamos el ancho de la imagen real */
-    max-width: 600px; /* Cambia este número al tamaño que quieras que tenga la foto */
-    
-  /* 2. Controlamos la altura para que no se deforme */
-    height: 400px; 
-    object-fit: contain; /* 'contain' hace que la imagen entera quepa dentro del espacio sin recortarse */
-    
-  /* 3. Centramos la imagen horizontalmente dentro del carrusel */
-    margin: 0 auto; 
-}
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -49,27 +33,4 @@
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-
-
-/*
-/*
-.carousel-item img {
-  height: 500px; /* Define la altura que desees */
- /* object-fit: cover; /* Evita que la imagen se deforme */
- /* object-position: center; /* Centra el recorte de la imagen */
-/*}
-
-/* Altura por defecto para móviles*/
-/*.carousel-item {
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
-}
-
-/* Altura para pantallas más grandes (tablets y computadoras) */
-/*@media (min-width: 768px) {
-    .carousel-item {
-    height: 500px; 
-    }
-}  */
 
